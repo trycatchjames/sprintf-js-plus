@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+<head>
+    <script src="../bower_components/numeraljs/numeral.js"></script>
+    <script src="../bower_components/moment/moment.js"></script>
+    <script src="../src/sprintf.js"></script>
+</head>
+<body>
+<script>
+    var values = {
+        name: "Dick bag",
+        sale_price: 4500000.20,
+        sale_date:"2014-01-10"
+    };
+    console.log(sprintf("It's the %(sale_date){DD of MMMM YYYY}t", values));
+    console.log(sprintf("I earned %(sale_price){'$0a'}i", values));
+</script>
+</body>
+</html>
